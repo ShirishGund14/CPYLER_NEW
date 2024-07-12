@@ -1,0 +1,52 @@
+.modal-container {
+    position: fixed;
+    /* Change from absolute to fixed */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* Increase z-index to ensure it appears above other elements */
+    overflow: auto;
+    /* Add overflow auto to the modal container */
+
+
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.modal-content {
+    width: 80%;
+    height: 80%;
+    /* Change height to max-height */
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #403d39;
+}
+
+.modal-content>textarea {
+    height: 70%;
+    background-color: #282725;
+    border: transparent;
+    color: antiquewhite;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.modal-title {
+    font-size: 2rem;
+    background-color: transparent;
+    color: antiquewhite;
+    border: transparent;
+}

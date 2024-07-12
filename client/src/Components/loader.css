@@ -1,0 +1,57 @@
+.loader-page{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(90, 90, 90, 0.7); /* Adjust the background color and opacity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* Ensure the overlay is on top of other elements */
+}
+
+
+
+
+.loader-logo {
+    color: antiquewhite;
+    font-size: 11rem;
+}
+
+@keyframes rotate-clockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(50deg);scale: 1.5;
+
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotate-counterclockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+        
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.loader-logo {
+    animation: rotate-clockwise 2s infinite alternate, rotate-counterclockwise 2s infinite alternate;
+}
+
+.loader-logo2{
+    color: #eb5e28;
+    font-size: 11rem;
+    position: absolute;
+    animation: rotate-clockwise 6s infinite alternate, rotate-counterclockwise 6s infinite alternate;
+}

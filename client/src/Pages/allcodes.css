@@ -1,0 +1,76 @@
+.Allcodes-page{
+    width: 100vw;
+    height: calc(100vh - 100px);
+    /* border: 2px solid blue; */
+    padding: 20px;
+    background-color: #403d39;
+    display: flex;
+    gap: 15px;
+    overflow-y: auto;
+    flex-wrap: wrap;
+    justify-content:space-evenly ;
+}
+
+.codecard-container{
+    height: 300px;
+    width: 300px;
+    background-color: #282725;
+    border-radius: 20px;
+    color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    
+}
+.codecard-container:hover{
+    border: 4px solid  #eb5e28;;
+    /* height: 320px; */
+    transform: scale(1.05);
+    transition: border-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.codecard-top-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rightcorner{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.codecard-container > button{
+ width: 100%;
+ border-radius: 50px;
+ padding: 10px;
+ background-color: #ccc5b9;
+ color: black;
+ border: transparent;
+
+}
+
+.codecard-container > button:hover{
+    background-color: transparent;
+    color: #ccc5b9;
+    border: 2px solid #ccc5b9;
+}
+
+.rightcorner > button{
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    font-size: 2rem;
+}
+.rightcorner > button:hover{
+    color: #eb5e28;
+}
+
+.card-content>h4{
+    color: #ccc5b9;
+
+}
+.card-content>h5 {
+    color: orange;
+}

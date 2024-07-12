@@ -1,0 +1,157 @@
+
+
+.home-page{
+    /* border: 2px solid blue; */
+    width: 100vw;
+    height:calc(100vh - 100px);
+    padding: 150px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    overflow: hidden;
+   background-color: #403d39;
+}
+
+.home-container{
+    border: 5px solid rgb(26, 25, 25);
+    border-radius: 50px;
+    position: absolute;
+   
+
+
+    /* background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+
+
+    /* From https://css.glass */
+background: rgba(159, 159, 159, 0.55);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.9px);
+-webkit-backdrop-filter: blur(10.9px);
+border: 1px solid rgba(159, 159, 159, 1);
+
+
+    padding: 50px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    width: 50vw;
+
+    border-left: 7px solid  #eb5e28;
+}
+.top{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.bottom button{
+    width: 200px;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: transparent;
+}
+
+/* CSS styles */
+
+
+
+
+.bottom button:nth-child(1){
+    background-color: transparent;
+    border: 2px solid black;;
+    color: black
+}
+
+.bottom button:nth-child(1):hover {
+    background-color :antiquewhite;
+    color: black;
+   border: transparent;
+}
+
+
+.bottom button:nth-child(2) {
+    background-color:#eb5e28;
+    color:white
+    /* Add any other hover styles */
+}
+.bottom button:nth-child(2):hover {
+    background-color: transparent;
+    border: 2px solid black;;
+    color: black
+    /* Add any other hover styles */
+}
+
+
+
+.home-page .circle-1{
+height: 700px;
+width: 700px;
+z-index: -1;
+color: #eb5e28;
+margin-left: 50%;
+background-color: transparent;
+}
+
+.top h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.myname ,.cpyler{
+    color: antiquewhite;
+}
+
+.top > p{
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+/* For mobile devices (up to 600px width) */
+@media only screen and (max-width: 600px) {
+    .home-page {
+      padding: 50px; 
+     
+    }
+  
+    .home-container {
+      width: 85vw;
+      padding: 15px; 
+    }
+  
+  
+    .top h1 {
+      font-size: 2rem;
+    }
+    .top>p{
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+  
+    .bottom button {
+      width: 100px; 
+      font-size: 0.7rem; 
+    }
+    .home-page .circle-1{
+        height: 509px;
+        width: 295px;
+        z-index: -1;
+        color: #eb5e28;
+        margin-left: 24%;
+    
+        }
+  }
+  

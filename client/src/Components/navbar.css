@@ -1,0 +1,98 @@
+.navbar-container{
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #202124;
+}
+.logo{
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.navbar-btns{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.navbar-btns button{
+    padding: 10px;
+    border-radius: 50px ;
+    width: 170px;
+    border: solid 3px #eb5e28;
+    background-color: #403d39;
+    color: white;
+}
+
+
+
+.navbar-btns button:hover {
+    cursor: pointer;
+    background-color: #eb5e28;
+    color: white;
+    border-left: 10px solid antiquewhite;
+    border-right: 10px solid antiquewhite;
+
+   
+}
+.logo{
+    color: #eb5e28;
+    font-weight: 500;
+    
+}
+.logo :hover{
+    color: white;
+}
+
+.btn-nav{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 5px;
+}
+
+.icon{
+    font-size: 1.5rem;
+    /* color: #eb5e28; */
+    color: antiquewhite;
+}
+
+
+
+
+/* navbar.css */
+
+/* For smaller screens (up to 600px width) */
+@media only screen and (max-width: 600px) {
+    .navbar-container {
+        /* Stack items vertically */
+         height: 100px;
+        padding: 10px; /* Adjust padding */
+        width: 100vw;
+    }
+
+    .navbar-btns {
+     /* Stack buttons vertically */
+        gap: 10px; /* Adjust gap between buttons */
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .navbar-btns > button {
+       width: 40px;
+       border-radius: 5px;
+       border: transparent;
+    }
+    .btn-name{
+        display: none;
+    }
+    .icon{
+        font-size: 1.5rem;
+        color: #eb5e28;
+    }
+}
